@@ -13,7 +13,7 @@ while True:
         record = Person(name='?',age='?')
     for field in fieldnames:
         currval = getattr(record,field)
-        newtext = raw_input('\t[%s]=%s\n\t\tnew?'   %(field,currval))
+        newtext = raw_input('\t[%s]=%s\n\t\tnew?=>'   %(field,currval))
         if newtext:
             setattr(record,field,eval(newtext))
     db[key] = record
